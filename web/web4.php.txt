@@ -1,0 +1,11 @@
+
+<?php
+require('function.php');
+if($_SERVER["REQUEST_METHOD"]=="POST")
+$name=$_POST["name"];
+$password=$_POST["password"];
+$con=con();
+$query="INSERT INTO order2 (password,name) VALUES ('$password','$name')";
+$result = $con->query($query);
+echo "<script>window.location='order.php'</script>";
+?>

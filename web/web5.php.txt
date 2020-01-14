@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Admin page</title>
+<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+	<link href="./assets/css/font-awesome.css" rel="stylesheet">
+	<link href="./assets/css/blog_page.css" rel="stylesheet">
+	<link href="./assets/fonts/font.css" rel="stylesheet">
+	<link href="./assets/css/drop.css" rel="stylesheet">
+	<link href="./assets/css/index.css" rel="stylesheet">
+	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1 style="text-align:center;">
+Set price </h1>
+<div align="middle">
+<form method="post"  style="font-style:italic;font-size:20px;" action="adminbackhend.php">
+type 1<input name="1" type="text" class="form-control" style="width:800px;background-color:yellow;color:red;">
+price 1<input name="1p" type="number" class="form-control" style="width:800px;background-color:yellow;color:red;">
+type 2<input name="2" type="text" class="form-control" style="width:800px;background-color:yellow;color:red;">
+price 2<input name="2p" type="number" class="form-control" style="width:800px;background-color:yellow;color:red;">
+type 3<input name="3" type="text" class="form-control" style="width:800px;background-color:yellow;color:red;">
+price 3<input name="3p" type="number" class="form-control" style="width:800px;background-color:yellow;color:red;">
+type 4<input name="4" type="text" class="form-control" style="width:800px;background-color:yellow;color:red;">
+price 4<input name="4p" type="number" class="form-control" style="width:800px;background-color:yellow;color:red;">
+ </br><input type="submit" class="form-control" style="width:800px;background-color:yellow;color:red;font-size:20px;">
+</form>
+</div>
+</body>
+</html>

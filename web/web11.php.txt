@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+	<link href="./assets/css/font-awesome.css" rel="stylesheet">
+	<link href="./assets/css/blog_page.css" rel="stylesheet">
+	<link href="./assets/fonts/font.css" rel="stylesheet">
+	<link href="./assets/css/drop.css" rel="stylesheet">
+	<link href="./assets/css/index.css" rel="stylesheet">
+	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<h1 style="text-align:center;">
+Give order </h1>
+<img src="download.jpg" align="right"/>
+<form method="post"  style="font-style:italic;font-size:20px;" action="L_backhand.php">
+</br>Menu</br>
+<select name="menu" class="form-control" style="font-style:italic;font-size:20px;width:800px;background-color:yellow;color:red;">
+<option>magahi</option>
+<option>desi</option>
+<option>jagarnathi</option>
+</select>
+</br>Any preference</br>
+<input name="preference" type="text" align="middle" class="form-control" style="width:800px;background-color:yellow;color:red;">
+</br>Name</br>
+<input name="name" type="text" class="form-control" name="p1" style="width:800px;background-color:yellow;color:red;">
+</br>Amount</br>
+<input name="amount" type="text" class="form-control" style="width:800px;background-color:yellow;color:red;"></br>
+<input type="submit" value="enter" style="width:100px;height:50px;font-size:30px;color:black;background-color:yellow;" class="btn btn-danger" />
+<input type="reset" value="Reset" style="width:100px;height:50px;font-size:30px;color:black;background-color:yellow;"  class="btn btn-danger"/>
+</form>
+
+</body>
+</html>

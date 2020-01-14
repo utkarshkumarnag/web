@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<body style="background-color:black;">
+<?php
+require('function.php');
+if($_SERVER["REQUEST_METHOD"]=="POST")
+{
+	?>
+	
+	<h1  style="color:red;text-align:center;">
+		<?php
+  echo "Order date is-" . date("d/m/Y") . "<br>";
+  ?>
+  </h1>
+ 
+<?php 
+$menu=$_POST["menu"];
+$preference=$_POST["preference"];
+$name=$_POST["name"];
+$amount=$_POST["amount"];
+?>
+
+<h1  style="color:red;text-align:center;">
+
+<?php
+ echo ("your record is: $menu, $preference, $amount, $name");
+?>
+</h1>
+<?php
+$con=con();
+$date = date('Y-m-d');
+$time=date('H:i:s');
+$query="INSERT INTO order1 (menu,preference,name,amount,date,time) VALUES ('$menu','$preference','$name','$amount','$date','$time')";
+$result = $con->query($query);
+ //echo "<script>alert('your record is added');window.location='L.php'</script>";
+//echo "<script>window.location='L.php'</script>";
+}
+?>
+<div align="center">
+<a href="L.php" style="color:red;font-size:36px;font-style:italic;">Click for back to main page</a>
+</div>
+</body>
+</html>
